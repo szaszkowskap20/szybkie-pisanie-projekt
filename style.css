@@ -1,0 +1,73 @@
+body{
+    background-color: #433E3E;
+}
+.s1{
+    display: inline-block;
+    font-size: 40px;
+   
+    font-weight: 700;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav button{
+    font-size: 40px;
+    background-color: #433E3E;
+    border: 0;
+    color: white;
+    display: block;
+}
+main{
+   display:inline-block;
+   justify-content: center;
+   text-align: center;
+   margin: 40px;
+   margin-top: 25px;
+}
+nav{
+   display:inline-block;
+   padding: 30px;
+   margin: 30px;
+   border-right: 2px solid #1e7b1e;
+   color: white;
+}
+h1{
+   font-size: 75px;
+}
+input{
+   height: 40px;
+   width:500px;
+}
+input[type=text] {
+width: 100%;
+padding: 12px 275px;
+margin: 8px 0;
+box-sizing: border-box;
+font-size: 40px;
+font-weight: 700;
+}
+.glowna{
+   border-radius: 15px;
+   padding: 25px;
+   background-color:#C4C4C4;
+}
+#spr{
+   margin: 50px;
+}
+.bledy{
+   color: white;
+   font-size: 30px;
+}
+header section{
+   color: white;
+   font-size: 20px;
+   border: 2px white;
+   border-radius: 5%;
+   padding: 10px;
+}
+header h3{
+   color: white;
+   font-size: 40px;
+   text-align: center;
+}
