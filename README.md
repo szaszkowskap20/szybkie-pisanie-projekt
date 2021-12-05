@@ -1,0 +1,1 @@
+# szybkie-pisanie-projekt
