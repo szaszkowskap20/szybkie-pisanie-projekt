@@ -16,68 +16,80 @@ const os = document.getElementById('osiem')
 const dz = document.getElementById('dziewiec')
 const dzi = document.getElementById('dziesiec')
 const jed = document.getElementById('jedenascie')
+const main = document.querySelector('main')
 
 je.addEventListener('click', function d(){
     jakie_litery = ile_liter[0]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 dw.addEventListener('click', function d(){
     jakie_litery = ile_liter[1]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
 })
 trz.addEventListener('click', function d(){
   
     jakie_litery = ile_liter[2]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
 })
 czt.addEventListener('click', function d(){
     jakie_litery = ile_liter[3]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 pie.addEventListener('click', function d(){
     jakie_litery = ile_liter[4]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 sze.addEventListener('click', function d(){
     jakie_litery = ile_liter[5]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 si.addEventListener('click', function d(){
     jakie_litery = ile_liter[6]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 os.addEventListener('click', function d(){
     jakie_litery = ile_liter[7]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 dz.addEventListener('click', function d(){
     jakie_litery = ile_liter[8]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 dzi.addEventListener('click', function d(){
     jakie_litery = ile_liter[9]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
 })
 jed.addEventListener('click', function d(){
     jakie_litery = ile_liter[10]
+    main.style.display = "inline-block";
     losowanie_liter(jakie_litery)
     removeBtn()
     
@@ -89,6 +101,11 @@ function removeBtn(){
     }
     document.getElementsByClassName('prz')[0].style.display = "block"
     document.querySelector('nav').style.borderRight = "#433E3E"
+    document.querySelector('.prz').style.backgroundColor = "#C4C4C4";
+    document.querySelector('.prz').style.marginLeft= "auto";
+    document.querySelector('.prz').style.marginRight = "auto";
+    document.querySelector('.prz').style.borderRadius = "15px";
+
     //document.getElementsByClassName('prz')[1].style.display = "block" 
 }
 
@@ -202,93 +219,10 @@ tekst2.addEventListener('keydown', function(){
         let w = (koniec.getTime() - poczatek.getTime())/1000
         console.log(w)
         let srednia = w/59
-        document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minute" 
+        document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę" 
         document.querySelector(".super").style.color = "white"
         document.querySelector(".super").style.fontSize = "30px"
     }
    ktory_znak++
 
 })
- /*  
-   if(ktory_znak == 60){
-       kp[1] = Date.parse()
-   }
-   
-    
-   
-})
- document.querySelector(".rzad_1wpis").addEventListener('keydown', function(){
-     console.log(kp[0])
- })
- document.querySelectorAll(".prz")[0].addEventListener('click', function(){
-     console.log(kp[1])
-     console.log("wynik = " + (kp[1] - kp[0]))
- })
- 
-
-
-let koniec = kp[2]
-console.log(koniec-poczatek)
-
-let ktory_z = 60;
-const tekst3 = document.querySelector(".rzad3_wpis")
-tekst3.addEventListener('keydown', function(){
-    let klawi = event.key
-    let kasowanie = event.keyCode
-   for(i = 60; i < 90; i++){
-       console.log(znaki_wejsciowe[i])
-   }
-   
-    if((kasowanie == 8)){
-        
-        blad = blad-1
-        ktory_z-=2
-        
-    }
-   
-    if(klawi != znaki_wejsciowe[ktory_z]){
-        blad++;
-        document.querySelector(".bledy").innerHTML = "Błędy: " + blad;
-        document.querySelector(".bledy").style.color = "white";
-        document.querySelector(".bledy").style.fontSize = "30px";
-        document.getElementsByClassName("super")[0].innerHTML = "kod znaku:" + kasowanie + " Jaki znak: " + ktory_z + " Wyjscie: " + znaki_wejsciowe[ktory_z] + " Uzytkownik: " + klawi;
-      
-    }
-   ktory_z++
-   if(jaki_znak < 60){
-        jaki_znak = 60
-    }
-   
-   
-    
-   
-})
-let ktory_zn = 90;
-const tekst4 = document.querySelector(".rzad3_wpis")
-tekst4.addEventListener('keydown', function(){
-    let klawis = event.key
-    let kasowanie = event.keyCode
-   
-   
-    if((kasowanie == 8)){
-        
-        blad = blad-1
-        ktory_zn-=2
-        
-    }
-   
-    if(klawis != znaki_wejsciowe[ktory_z]){
-        blad++;
-        document.querySelector(".bledy").innerHTML = "Błędy: " + blad;
-        document.querySelector(".bledy").style.color = "white";
-        document.querySelector(".bledy").style.fontSize = "30px";
-        document.getElementsByClassName("super")[0].innerHTML = "kod znaku:" + kasowanie + " Jaki znak: " + ktory_zn + " Wyjscie: " + znaki_wejsciowe[ktory_zn] + " Uzytkownik: " + klawis;
-
-      
-    }
-   ktory_zn++
-   
-   
-    
-   
-})*/

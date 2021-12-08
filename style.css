@@ -19,7 +19,7 @@ nav button{
     display: block;
 }
 main{
-   display:inline-block;
+   display:none;
    justify-content: center;
    text-align: center;
    margin: 40px;
@@ -40,12 +40,12 @@ input{
    width:500px;
 }
 input[type=text] {
-width: 100%;
-padding: 12px 275px;
-margin: 8px 0;
-box-sizing: border-box;
-font-size: 40px;
-font-weight: 700;
+   width: 100%;
+   padding: 12px 275px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   font-size: 40px;
+   font-weight: 700;
 }
 .glowna{
    border-radius: 15px;
