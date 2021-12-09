@@ -41,7 +41,7 @@ input{
 }
 input[type=text] {
    width: 100%;
-   padding: 12px 275px;
+   padding: 20px 275px;
    margin: 8px 0;
    box-sizing: border-box;
    font-size: 40px;
