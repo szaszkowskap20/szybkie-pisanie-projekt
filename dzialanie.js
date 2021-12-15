@@ -218,8 +218,25 @@ tekst2.addEventListener('keydown', function(){
         console.log(koniec)
         let w = (koniec.getTime() - poczatek.getTime())/1000
         console.log(w)
-        let srednia = w/59
-        document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę" 
+        let srednia = 59/w
+        document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę"
+        if(localStorage.length != 0){
+            let poprzedni = ParseFloat(localStorage.getItem('wynik'))
+            let pg = poprzedni - w;
+            if(pg == 0){
+                document.querySelector('.st').innerHTML = "Twój wynik jest taki sam jak poprzednio!";
+            }
+            if(pg > 0){
+                document.querySelector('.st').innerHTML = "Twój wynik jest gorszy od poprzedniego";
+            }
+            else{
+                document.querySelector('.st').innerHTML = "Twój wynik jest lepszy od poprzedniego"
+            }
+            localStorage.removeItem('wynik')
+            localStorage.setItem('wynik', w)
+        }
+        
+        console.log(localStorage.getItem("wynik"))
         document.querySelector(".super").style.color = "white"
         document.querySelector(".super").style.fontSize = "30px"
     }
