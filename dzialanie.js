@@ -222,8 +222,8 @@ tekst2.addEventListener('keydown', function(){
         document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę"
         let dlugosc = localStorage.lenght
         if(dlugosc != 0){
-            let poprzedni = parseFloat(Window.localStorage.getItem('wynik'))
-            let pg = poprzedni - w;
+            let poprzedni = localStorage.getItem('wynik')
+            let pg = parseFloat(poprzedni) - w;
             if(pg == 0){
                 document.querySelector('.st').innerHTML = "Twój wynik jest taki sam jak poprzednio!";
             }
