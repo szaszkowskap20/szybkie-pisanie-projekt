@@ -220,8 +220,8 @@ tekst2.addEventListener('keydown', function(){
         console.log(w)
         let srednia = 59/w
         document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę"
-        if(localStorage.length != 0){
-            let poprzedni = ParseFloat(localStorage.getItem('wynik'))
+        if(Window.localStorage.length != 0){
+            let poprzedni = ParseFloat(Window.localStorage.getItem('wynik'))
             let pg = poprzedni - w;
             if(pg == 0){
                 document.querySelector('.st').innerHTML = "Twój wynik jest taki sam jak poprzednio!";
@@ -232,11 +232,11 @@ tekst2.addEventListener('keydown', function(){
             else{
                 document.querySelector('.st').innerHTML = "Twój wynik jest lepszy od poprzedniego"
             }
-            localStorage.removeItem('wynik')
-            localStorage.setItem('wynik', w)
-            console.log(localStorage.getItem("wynik"))
-        }if(localStorage.length == 0){
-            localStorage.setItem('wynik', w)
+            Window.localStorage.removeItem('wynik')
+            Window.localStorage.setItem('wynik', w)
+            console.log(Window.localStorage.getItem("wynik"))
+        }if(Window.localStorage.length == 0){
+            Window.localStorage.setItem('wynik', w)
         }
         
         
