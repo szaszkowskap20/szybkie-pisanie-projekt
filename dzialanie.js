@@ -234,9 +234,10 @@ tekst2.addEventListener('keydown', function(){
             }
             localStorage.removeItem('wynik')
             localStorage.setItem('wynik', w)
+            console.log(localStorage.getItem("wynik"))
         }
         
-        console.log(localStorage.getItem("wynik"))
+        
         document.querySelector(".super").style.color = "white"
         document.querySelector(".super").style.fontSize = "30px"
     }
