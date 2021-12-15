@@ -230,8 +230,8 @@ tekst2.addEventListener('keydown', function(){
             if(pg > 0){
                 document.querySelector('.st').innerHTML = "Twój wynik jest gorszy od poprzedniego";
             }
-            else{
-                document.querySelector('.st').innerHTML = "Twój wynik jest lepszy od poprzedniego"
+            if(pg < 0){
+                document.querySelector('.st').innerHTML = "Twój wynik jest lepszy od poprzedniego";
             }
             Window.localStorage.removeItem('wynik')
             Window.localStorage.setItem('wynik', w)
