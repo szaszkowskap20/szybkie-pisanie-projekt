@@ -235,6 +235,8 @@ tekst2.addEventListener('keydown', function(){
             localStorage.removeItem('wynik')
             localStorage.setItem('wynik', w)
             console.log(localStorage.getItem("wynik"))
+        }if(localStorage.length == 0){
+            localStorage.setItem('wynik', w)
         }
         
         
@@ -244,3 +246,4 @@ tekst2.addEventListener('keydown', function(){
    ktory_znak++
 
 })
+
