@@ -236,13 +236,16 @@ tekst2.addEventListener('keydown', function(){
             localStorage.removeItem('wynik')
             localStorage.setItem('wynik', w)
             console.log(localStorage.getItem("wynik"))
-        }if(Window.localStorage.length == 0){
+        }if(dlugosc == 0){
             Window.localStorage.setItem('wynik', w)
         }
         
         
         document.querySelector(".super").style.color = "white"
         document.querySelector(".super").style.fontSize = "30px"
+        
+        document.querySelector(".st").style.color = "white"
+        document.querySelector(".st").style.fontSize = "30px"
     }
    ktory_znak++
 
