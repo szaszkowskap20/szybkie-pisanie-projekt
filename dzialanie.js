@@ -228,7 +228,7 @@ tekst2.addEventListener('keydown', function(){
                 document.querySelector('.st').innerHTML = "Twój wynik jest taki sam jak poprzednio!";
             }
             if(pg > 0){
-                document.querySelector('.st').innerHTML = "Twój wynik jest gorszy od poprzedniego";
+                document.querySelector('.st').innerHTML = 'Twój wynik jest gorszy od poprzedniego';
             }
             if(pg < 0){
                 document.querySelector('.st').innerHTML = "Twój wynik jest lepszy od poprzedniego";
