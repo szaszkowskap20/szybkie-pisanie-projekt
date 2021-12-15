@@ -220,7 +220,8 @@ tekst2.addEventListener('keydown', function(){
         console.log(w)
         let srednia = 59/w
         document.querySelector('.super').innerHTML = "Czas: " + w + " sekund<br>Tempo: " + Math.floor(srednia * 60) + " klawiszy na minutę"
-        if(Window.localStorage.length != 0){
+        let dlugosc = localStorage.lenght
+        if(dlugosc != 0){
             let poprzedni = parseFloat(Window.localStorage.getItem('wynik'))
             let pg = poprzedni - w;
             if(pg == 0){
